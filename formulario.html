@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form action="https://formsubmit.co/rosnairacordoba07@gmail.com" method="POST" autocomplete="off">
+        <h2>contáctanos</h2>
+        <div class="form-txt">
+            <a href="#">Politica de privacidad</a>
+            <a href="#">Terminos y condiciones</a>
+        </div>
+        <div class="input-group">
+
+            <input type="text" name="nombre" placeholder="Ingrese su nombre:" required >
+
+            <input type="tel" name="teléfono" placeholder="Ingrese su teléfono" required>
+
+            <input type="email" name="correo" placeholder="Ingrese su correo:" required>
+
+            <input type="text" name="país" placeholder="ingrese su país" required>
+
+            <label for="genero" class="label_genero"></label>
+            <select name="genero" id="" class="select_genero">
+                <option value="genero">Genero</option>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="no definido">No definido</option>
+            </select>
+
+            <textarea name="mensaje" cols="30" rows="5" placeholder="Ingrese su mensaje.."></textarea>
+
+            <input class="btn" type="submit" value="Enviar" >
+
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/formulario.html">
+
+            <input type="hidden" name="_captcha" value="false">
+
+        </div>
+    </form>
+
+</body>
+</html>
